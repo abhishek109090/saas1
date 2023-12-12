@@ -1,0 +1,24 @@
+.txt{
+    font-family:'Segoe UI';
+    animation:  txt  7s ease-out  normal;
+  }
+  #driverinfo{
+    height: 100vh;
+  }
+  @keyframes txt{
+    0%{transform:scale(0.9) ;}
+    25%{transform:scale(1.1) ;}
+    60%{transform:scale(0.9) ;}
+    100%{transform:scale(0.9) ;}
+  }
+  #thead{
+    background-color:#c6c5b3 ;
+    border-width:0px 0px 0px 1px;
+ } 
+
+@media only screen and (max-width:480px) {
+  #driverinfo{
+    height: 80vh;
+  }
+}
+   

@@ -1,0 +1,40 @@
+ 
+ #thead{
+    background-color:#c6c5b3 ;
+    border-width:0px 0px 0px 1px;
+ } 
+#Agent{
+  background-color:#e2eff1;
+}
+ .Agentbg{
+    height: 100vh;
+ }
+ .txt{
+   font-family:'Segoe UI';
+   animation:  txt  7s ease-out  normal;
+ }
+ @keyframes txt{
+   0%{transform:scale(0.9) ;}
+   25%{transform:scale(1.1) ;}
+   60%{transform:scale(0.9) ;}
+   100%{transform:scale(0.9) ;}
+ }
+ .agent-id-feild{
+
+  margin-left:'10px';
+  height:'42px'
+ }
+ #infobutton{
+  height: 40px;
+  border-radius: 7px;
+ }
+
+ @media only screen and (max-width:480px) {
+  .Agentbg{
+    height: 80vh;
+ }
+ #Scroll-bar{
+  overflow: hidden;
+  overflow-x: scroll;
+ }
+ }

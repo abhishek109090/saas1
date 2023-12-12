@@ -1,0 +1,104 @@
+Artificial intelligence (AI) is the intelligence of machines or software, as opposed to the intelligence of humans or animals. It is the subject of an eponymous field of study in computer science, which develops and studies intelligent machines. The term AI may also refer to the intelligent machines themselves.
+
+1.reactive
+Reactive machines are AI systems that have no memory and are task specific, meaning that an input always delivers the same output. Machine learning models tend to be reactive machines because they take customer data, such as purchase or search history, and use it to deliver recommendations to the same customers.
+
+2.Limited memory machines
+Limited memory AI, unlike reactive machines, can look into the past and monitor specific objects or situations over time. Then, these observations are programmed into the AI so that its actions can be performed based on both past and present moment data.
+
+3.theroy of mind
+In psychology, "Theory of Mind" means that people have thoughts, feelings and emotions that affect their behavior. Future AI systems must learn to understand that everyone (both people and AI objects) have thoughts and feelings. Future AI systems must know how to adjust their behavior to be able to walk among us.
+
+4.self aware
+Self-aware AI is a concept that involves creating AI systems capable of being conscious of themselves. This means that AI would be able to comprehend its own existence, have a sense of identity, and be aware of its thoughts and emotions.
+
+
+10 Benefits of Artificial Intelligence
+1. Reduction in Human Error
+One of the biggest benefits of Artificial Intelligence is that it can significantly reduce errors and increase accuracy and precision. The decisions taken by AI in every step is decided by information previously gathered and a certain set of algorithms. When programmed properly, these errors can be reduced to null. 
+
+Example:
+An example of the reduction in human error through AI is the use of robotic surgery systems, which can perform complex procedures with precision and accuracy, reducing the risk of human error and improving patient safety in healthcare.
+
+2. Zero Risks
+Another big benefit of AI is that humans can overcome many risks by letting AI robots do them for us. Whether it be defusing a bomb, going to space, exploring the deepest parts of oceans, machines with metal bodies are resistant in nature and can survive unfriendly atmospheres. Moreover, they can provide accurate work with greater responsibility and not wear out easily.
+
+Example:
+One example of zero risks is a fully automated production line in a manufacturing facility. Robots perform all tasks, eliminating the risk of human error and injury in hazardous environments.
+
+3. 24x7 Availability
+There are many studies that show humans are productive only about 3 to 4 hours in a day. Humans also need breaks and time offs to balance their work life and personal life. But AI can work endlessly without breaks. They think much faster than humans and perform multiple tasks at a time with accurate results. They can even handle tedious repetitive jobs easily with the help of AI algorithms. 
+
+Example:
+An example of this is online customer support chatbots, which can provide instant assistance to customers anytime, anywhere. Using AI and natural language processing, chatbots can answer common questions, resolve issues, and escalate complex problems to human agents, ensuring seamless customer service around the clock.
+
+Your AI/ML Career is Just Around The Corner!
+AI Engineer Master's ProgramEXPLORE PROGRAMYour AI/ML Career is Just Around The Corner!
+4. Digital Assistance
+Some of the most technologically advanced companies engage with users using digital assistants, which eliminates the need for human personnel. Many websites utilize digital assistants to deliver user-requested content. We can discuss our search with them in conversation. Some chatbots are built in a way that makes it difficult to tell whether we are conversing with a human or a chatbot.
+
+Example:
+We all know that businesses have a customer service crew that must address the doubts and concerns of the patrons. Businesses can create a chatbot or voice bot that can answer all of their clients' questions using AI.
+
+Related Reading: Top Digital Marketing Trends
+
+5. New Inventions
+In practically every field, AI is the driving force behind numerous innovations that will aid humans in resolving the majority of challenging issues.
+
+For instance, recent advances in AI-based technologies have allowed doctors to detect breast cancer in a woman at an earlier stage.
+
+Example:
+Another example of new inventions is self-driving cars, which use a combination of cameras, sensors, and AI algorithms to navigate roads and traffic without human intervention. Self-driving cars have the potential to improve road safety, reduce traffic congestion, and increase accessibility for people with disabilities or limited mobility. They are being developed by various companies, including Tesla, Google, and Uber, and are expected to revolutionize transportation.
+
+6. Unbiased Decisions
+Human beings are driven by emotions, whether we like it or not. AI on the other hand, is devoid of emotions and highly practical and rational in its approach. A huge advantage of Artificial Intelligence is that it doesn't have any biased views, which ensures more accurate decision-making.
+
+Example:
+An example of this is AI-powered recruitment systems that screen job applicants based on skills and qualifications rather than demographics. This helps eliminate bias in the hiring process, leading to an inclusive and more diverse workforce.
+
+7. Perform Repetitive Jobs
+We will be doing a lot of repetitive tasks as part of our daily work, such as checking documents for flaws and mailing thank-you notes, among other things. We may use artificial intelligence to efficiently automate these menial chores and even eliminate "boring" tasks for people, allowing them to focus on being more creative.
+
+Example:
+An example of this is using robots in manufacturing assembly lines, which can handle repetitive tasks such as welding, painting, and packaging with high accuracy and speed, reducing costs and improving efficiency.
+
+8. Daily Applications
+Today, our everyday lives are entirely dependent on mobile devices and the internet. We utilize a variety of apps, including Google Maps, Alexa, Siri, Cortana on Windows, OK Google, taking selfies, making calls, responding to emails, etc. With the use of various AI-based techniques, we can also anticipate today’s weather and the days ahead.
+
+Example:
+About 20 years ago, you must have asked someone who had already been there for instructions when you were planning a trip. All you need to do now is ask Google where Bangalore is. The best route between you and Bangalore will be displayed, along with Bangalore's location, on a Google map.
+
+9. AI in Risky Situations
+One of the main benefits of artificial intelligence is this. By creating an AI robot that can perform perilous tasks on our behalf, we can get beyond many of the dangerous restrictions that humans face. It can be utilized effectively in any type of natural or man-made calamity, whether it be going to Mars, defusing a bomb, exploring the deepest regions of the oceans, or mining for coal and oil.
+
+Example:
+For instance, the explosion at the Chernobyl nuclear power facility in Ukraine. As any person who came close to the core would have perished in a matter of minutes, at the time, there were no AI-powered robots that could assist us in reducing the effects of radiation by controlling the fire in its early phases.
+
+10. Medical Applications
+AI has also made significant contributions to the field of medicine, with applications ranging from diagnosis and treatment to drug discovery and clinical trials. AI-powered tools can help doctors and researchers analyze patient data, identify potential health risks, and develop personalized treatment plans. This can lead to better health outcomes for patients and help accelerate the development of new medical treatments and technologies.
+
+Disadvantages of Artificial Intelligence
+1. High Costs
+The ability to create a machine that can simulate human intelligence is no small feat. It requires plenty of time and resources and can cost a huge deal of money. AI also needs to operate on the latest hardware and software to stay updated and meet the latest requirements, thus making it quite costly.
+
+2. No Creativity
+A big disadvantage of AI is that it cannot learn to think outside the box. AI is capable of learning over time with pre-fed data and past experiences, but cannot be creative in its approach. A classic example is the bot Quill who can write Forbes earning reports. These reports only contain data and facts already provided to the bot. Although it is impressive that a bot can write an article on its own, it lacks the human touch present in other Forbes articles. 
+
+3. Unemployment
+One application of artificial intelligence is a robot, which is displacing occupations and increasing unemployment (in a few cases). Therefore, some claim that there is always a chance of unemployment as a result of chatbots and robots replacing humans. 
+
+For instance, robots are frequently utilized to replace human resources in manufacturing businesses in some more technologically advanced nations like Japan. This is not always the case, though, as it creates additional opportunities for humans to work while also replacing humans in order to increase efficiency.
+
+4. Make Humans Lazy
+AI applications automate the majority of tedious and repetitive tasks. Since we do not have to memorize things or solve puzzles to get the job done, we tend to use our brains less and less. This addiction to AI can cause problems to future generations.
+
+5. No Ethics
+Ethics and morality are important human features that can be difficult to incorporate into an AI. The rapid progress of AI has raised a number of concerns that one day, AI will grow uncontrollably, and eventually wipe out humanity. This moment is referred to as the AI singularity.
+
+6. Emotionless
+Since early childhood, we have been taught that neither computers nor other machines have feelings. Humans function as a team, and team management is essential for achieving goals. However, there is no denying that robots are superior to humans when functioning effectively, but it is also true that human connections, which form the basis of teams, cannot be replaced by computers.
+
+7. No Improvement
+Humans cannot develop artificial intelligence because it is a technology based on pre-loaded facts and experience. AI is proficient at repeatedly carrying out the same task, but if we want any adjustments or improvements, we must manually alter the codes. AI cannot be accessed and utilized akin to human intelligence, but it can store infinite data.
+
+Machines can only complete tasks they have been developed or programmed for; if they are asked to complete anything else, they frequently fail or provide useless results, which can have significant negative effects. Thus, we are unable to make anything conventional.

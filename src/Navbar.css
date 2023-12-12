@@ -1,0 +1,53 @@
+ .navbar-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 10px;
+    
+  }
+  .mypro{
+    margin-left: 950px;
+  }
+
+  .dropdown-content  {
+    display: none;
+    position: absolute;
+    background-color: white;
+    right: 1;
+    z-index: 999;
+  }
+  
+  .navbar-it:hover .dropdown-content {
+    display: block;
+  }
+  .navbar-ite:hover .dropdown-content {
+    display: block;
+  }
+  .homeinnav{
+    background-color: transparent;
+    font-weight: bold;
+  
+  }
+ 
+  .navbar{
+    background-color:#48829e;
+  }
+  .dropdown-menu-dark{
+    width: 270px;
+    height: 250px;
+  }
+ 
+  .dropdown-toggle{
+    font-weight: bold;
+    color: white;
+    background-color: transparent;
+    z-index: 2;
+  }
+  #u{
+    max-width: 200px;
+  }
+  .dis{
+    margin-left: 30px;
+  }
+   
+
+  
