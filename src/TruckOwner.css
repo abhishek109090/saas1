@@ -1,0 +1,39 @@
+/* Add this CSS in a separate CSS file or within a <style> tag in your component */
+/* You can customize these styles further as needed */
+
+
+  
+  table {
+    width: 100%;
+    max-width: 1200px; /* Adjust the maximum width as needed */
+    margin: 0 auto;
+    border-collapse: collapse;
+    background-color: #f9f9f9;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  th {
+    background-color: #343a40; /* Dark background color for table headers */
+    color: white;
+    font-weight: bold;
+    text-align: center;
+  }
+  td{
+    text-align: center;
+
+  }
+  th, td {
+    padding: 10px;
+    border: 1px solid #ddd;
+  }
+  
+  tbody tr:nth-child(even) {
+    background-color: #f2f2f2; /* Alternate row background color */
+  }
+  
+  tbody tr:hover {
+    background-color: #ddd; /* Row background color on hover */
+  }
+  
+  /* Add more CSS rules as needed to customize the table appearance */
+  
