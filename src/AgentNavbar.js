@@ -15,51 +15,15 @@ export default function AgentNavbar() {
   console.log("CRN in AgentNavbar:", crn);
   console.log("CRN in AgentNavbar:", phonenumber);
 
-  // Function to handle navigation and pass crn as state
+ 
   const handleMyBookingClick = () => {
-    // Navigate to the AgentBooking component and pass the crn in the state
+
     navigate("/AgentBooking", { state: { crn: crn,phonenumber: phonenumber } });
   };
 
   return (
     <div>
-    {/* <nav className="navbar1">
-      <div className="navbar-item">
-        <li className="navbar-item1 dropdown1 fw-bold ">
-          {agentName}
-          <div className="dropdown-content1">
-            <Link to="/AgentInterface">Home</Link>
-            <Link to="#">My Profile</Link>
-            <Link to="/Dashboard">Logout</Link>
-          </div>
-        </li>
-      </div>
-      <div className="navbar-item ">
-        
-        <div className="navbar-item ms-5 fw-bold">
-          <Link to="/cal" style={{ color: 'black', textDecoration: 'none' }}>Distance Calculator</Link>
-        </div>
-        <div className="navbar-item ms-5">
-          <button
-            onClick={handleMyBookingClick}
-            className="navbar-link1 fw-bold"
-            style={{ backgroundColor: 'transparent', color: 'black' }}
-          >
-            My Booking
-          </button>
-        </div>
-        <div className="navbar-item ms-5 ">
-        <li className="navbar-item1 dropdown1 fw-bold">
-          My Profile
-          <div className="dropdown-content1">
-           
-            <Link to="#">My Profile</Link>
-            <Link to="/Dashboard">Logout</Link>
-          </div>
-        </li>
-      </div>
-      </div>
-    </nav> */}
+ 
 
     <nav class="navbar navbar-expand-lg p-0 " id='navbar1'>
   <div class="container">

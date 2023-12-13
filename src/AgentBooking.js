@@ -13,7 +13,6 @@ function AgentBooking() {
   const [selectedPayment, setSelectedPayment] = useState(null);
   const [showPaymentModal, setShowPaymentModal] = useState(false);
   const [crn, setCRN] = useState(null);
-  const [paymentAmount, setPaymentAmount] = useState('');
   const [phonenumber, setPhonenumber] = useState(null);
   const [showLoadingOTPInput, setShowLoadingOTPInput] = useState(false);
   const [showUnloadingOTPInput, setShowUnloadingOTPInput] = useState(false);
@@ -158,7 +157,6 @@ function AgentBooking() {
     setUnloadingDisabled(true);
   };
 
-  // Update this function to set the corresponding booking's input field to true
   const handleUnloadingOTPClick = (bookingId) => {
     setShowUnloadingOTPInput((prevState) => ({
       ...prevState,
@@ -237,32 +235,9 @@ function AgentBooking() {
       console.error('Error fetching data:', error);
     }
   };
-  // const handlePayNowClick = (bookingId) => {
-  //   if (unloadingOTPVerified) {
-  //     axios.put(`http://3.109.145.125/booking/${bookingId}/updatePaymentStatus`, { paymentStatus: 'Payment Completed' })
-  //       .then(() => {
-  //         window.location.reload();
-  //       })
-  //       .catch((error) => {
-  //         console.error('Error updating payment status:', error);
-  //       });
-  //   } else {
-  //     alert('Please verify unloading OTP first.');
-  //   }
-  // };
 
   const handlePayNowClick = (paymentOption, bookingId, totalPrice) => {
-    // if (unloadingOTPVerified) {
-    //   axios.put(http://localhost:9000/booking/${bookingId}/updatePaymentStatus, { paymentStatus: 'Payment Completed' })
-    //     .then(() => {
-    //       window.location.reload();
-    //     })
-    //     .catch((error) => {
-    //       console.error('Error updating payment status:', error);
-    //     });
-    // } else {
-    //   alert('Please verify unloading OTP first.');
-    // }
+
     localStorage.setItem('totalPrice', totalPrice);
     console.log(bookingId, totalPrice)
     setSelectedPayment(paymentOption);
@@ -354,16 +329,7 @@ function AgentBooking() {
 };
 
 const handlePayNowClick1 = (paymentOption) => {
-  // if (unloadingOTPVerified) {
-  //   axios.put(http://localhost:9000/booking/${bookingId}/updatePaymentStatus, { paymentStatus: 'Payment Completed' })
-  //     .then(() => {
-  //       window.location.reload();
-  //     })
-  //     .catch((error) => {
-  //       console.error('Error updating payment status:', error);
-  //     });
-  // } else {
-  //   alert('Please verify unloading OTP first.');
+
 
   setSelectedPayment(paymentOption);
   setCountdown(300);
@@ -419,17 +385,13 @@ const handlePayNowClick1 = (paymentOption) => {
             </button>
             </div>
             <div>
-            {/* <button className="btn btn-primary option-button" onClick={() => displayContent('searchByDateForm')}>
-              <span className="button-number-1">2</span> Cancel Booking
-            </button> */}
+         
             <button className="btn btn-info option-button" onClick={() => displayContent('truckTrackingForm')}>
               <span className=" button-number-1">B</span> <span className='zoom'> Print Bookings</span> 
             </button>
             </div>
             <div>
-            {/* <button className="btn btn-primary option-button" onClick={() => displayContent('ChangeBookingForm')}>
-              <span className="button-number-1">4</span> change booking date
-            </button> */}
+          
             <button className="btn btn-info option-button" onClick={() => displayContent('ChangeBookingForm')}>
               <span className="button-number-1">C</span> <span className='zoom'>TBR Number</span> 
             </button>
@@ -663,14 +625,13 @@ const handlePayNowClick1 = (paymentOption) => {
                   </ListGroup>
                 </div>
 
-                {/* Vertical Line */}
+          
                 <div className="vl"></div>
-                {/* Main content area for payment details */}
+               
                 <div className="w-75 pl-3">
                   {selectedPayment && (
                     <div>
-                      {/* Payment details for the selected option */}
-                      {/* Replace this with your actual payment details */}
+                    
 
                       {selectedPayment === 'QR Code' && (
                         <div>
@@ -705,27 +666,27 @@ const handlePayNowClick1 = (paymentOption) => {
         </ul>
       </div>
 
-      {/* Payment options with logos */}
+
       <div style={{ marginTop: '20px', display: 'flex', justifyContent: 'space-between' }}>
-        {/* Add UPI payment option */}
+       
         <div>
           <img src="upi-logo.png" alt="UPI" style={{ width: '50px', height: '50px' }} />
-          {/* Add UPI payment logic */}
+     
          
         </div>
-        {/* Add Paytm payment option */}
+      
         <div>
           <img src="paytm-logo.png" alt="Paytm" style={{ width: '50px', height: '50px' }} />
-          {/* Add Paytm payment logic */}
+ 
           
         </div>
-        {/* Add PhonePe payment option */}
+      
         <div>
           <img src="https://www.google.com/imgres?imgurl=https%3A%2F%2Fimages.yourstory.com%2Fcs%2Fimages%2Fcompanies%2FlogosC2051575978102071png&tbnid=bdJHrCLCVd1cYM&vet=12ahUKEwiYiJOC0MKCAxUVpukKHdmKDasQMygAegQIARBw..i&imgrefurl=https%3A%2F%2Fyourstory.com%2Fcompanies%2Fphonepe%3Forigin%3Dawards&docid=l4Bmpdtmv1eUFM&w=418&h=417&q=phone%20pay&ved=2ahUKEwiYiJOC0MKCAxUVpukKHdmKDasQMygAegQIARBw" alt="PhonePe" style={{ width: '50px', height: '50px' }} />
-          {/* Add PhonePe payment logic */}
+   
           
         </div>
-        {/* Add more payment options as needed */}
+       
       </div>
     </div>
   </div>
@@ -737,14 +698,7 @@ const handlePayNowClick1 = (paymentOption) => {
                 </div>
               </div>
             </Modal.Body>
-            {/* <Modal.Footer>
-        <Button variant="secondary" onClick={handleClosePaymentModal}>
-          Close
-        </Button>
-        <Button variant="primary" onClick={() => handlePaymentSubmit(bookings.id)}>
-          Submit Payment
-        </Button>
-      </Modal.Footer> */}
+         
   </Modal>
 
           

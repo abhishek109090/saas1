@@ -25,7 +25,7 @@ const CarouselWithCards = () => {
           </div> 
         </div> 
 
-        {/* Add more carousel items for additional cards */}
+       
 
       </div>
       <button className="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">

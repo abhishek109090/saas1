@@ -505,42 +505,7 @@ const navigate=useNavigate();
       </div>
     
 
-            {/* <h3 className="txt" style={{fontFamily:'Segoe UI',textShadow:'1px 2px 2px gray',marginLeft:'30px'}}> Manage Bookings</h3>
-            <button
-              className={`btn btn-info option-button ${activeContent === "MyTruckPostings" ? "active" : ""
-                }`}
-              onClick={() => displayContent("MyTruckPostings")}
-            >
-              <span className="button-number-1 me-3 ">A </span> <span className="ownzoom">My Truck Postings </span>
-              </button>
-            <button
-              className={`btn btn-info option-button ${activeContent === "searchByVehicleForm" ? "active" : ""
-                }`}
-              onClick={() => displayContent("searchByVehicleForm")}
-            >
-              <span className="button-number-1">B</span> <span className="ownzoom">Search by Registration No </span>
-            </button>
-            <button
-              className={`btn btn-info option-button ${activeContent === "searchByDateForm" ? "active" : ""
-                }`}
-              onClick={() => displayContent("searchByDateForm")}
-            >
-              <span className="button-number-1">C</span>   <span className="ownzoom">Search by Date</span>
-            </button>
-            <button
-              className={`btn btn-info option-button ${activeContent === "invoiceTrackingForm" ? "active" : ""
-                }`}
-              onClick={() => displayContent("invoiceTrackingForm")}
-            >
-              <span className="button-number-1">D</span> <span className="ownzoom">TBR Number </span>
-            </button>
-            <button
-              className={`btn btn-info option-button ${activeContent === "trucktrackingform" ? "active" : ""
-                }`}
-              onClick={() => displayContent("trucktrackingform")}
-            >
-              <span className="button-number-1">E</span>  <span className="ownzoom">Invoice Number</span>
-            </button> */}
+          
           </div>
 
           <div className="col-md-9 content" id="content" style={{backgroundColor:'#e2eff1'}}>

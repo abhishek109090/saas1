@@ -9,7 +9,6 @@ function AddSub() {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    // Create an object with the form data
     const formData = {
       loadingSublocations,
       unloadingSublocations,
@@ -17,7 +16,6 @@ function AddSub() {
     };
 
     try {
-      // Send a POST request to your backend using Axios
       const response = await axios.post('http://3.109.145.125/addsublocations', formData, {
         headers: {
           'Content-Type': 'application/json',
@@ -25,19 +23,14 @@ function AddSub() {
       });
 
       if (response.status === 200) {
-        // Data submitted successfully
         alert('Data submitted');
         console.log('Data submitted successfully');
       } else {
-        // Handle submission error
         console.error('Data submission failed');
       }
     } catch (error) {
-      // Handle general error
       console.error('An error occurred while submitting data:', error);
     }
-    // setFrom('');
-    // setTo('');
     setDistance('');
 
   };

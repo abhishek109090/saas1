@@ -21,8 +21,8 @@ export default function AgentBookNow() {
     });
 
     const [totalKilometers, setTotalKilometers] = useState(0);
-    const [totalPrice, setTotalPrice] = useState(0); // Manually set initial total price to 0
-    const [totalPrice1, setTotalPrice1] = useState(0); // Manually set initial total price to 0
+    const [totalPrice, setTotalPrice] = useState(0); 
+    const [totalPrice1, setTotalPrice1] = useState(0); 
 
     const [isModalOpen, setIsModalOpen] = useState(false); 
     const location = useLocation();
@@ -45,7 +45,6 @@ export default function AgentBookNow() {
       } = truckData;
       
     useEffect(() => {
-        // Calculate total kilometers when sublocations change
         const calculateTotalKilometers = async () => {
           try {
             const response = await axios.get('http://3.109.145.125:9001/sub', {
@@ -60,11 +59,9 @@ export default function AgentBookNow() {
               setTotalKilometers(distance);
               console.log(response.data)
             } else {
-              // Handle error response from the server
               console.error('Error fetching sublocation distances');
             }
           } catch (error) {
-            // Handle network or other errors
             console.error('An error occurred while fetching sublocation distances:', error);
           }
         };
@@ -72,7 +69,6 @@ export default function AgentBookNow() {
         calculateTotalKilometers();
       }, [formData.fromSublocation, formData.toSublocation]);
     useEffect(() => {
-        // Calculate total price when totalKilometers or pricePerKilometer change
         const calculateTotalPrice = () => {
           const totalPrice = totalKilometers * 200;
           setTotalPrice(totalPrice);
@@ -85,35 +81,28 @@ export default function AgentBookNow() {
         setIsModalOpen(true);
       };
       
-      // Function to close the modal
       const closeModal = () => {
         setIsModalOpen(false);
       };
       const handleBookNowClick = async () => {
         if (agentType === 'postpaid') {
-          // Send data to the backend server
            await sendDataToBackend();
            deleteBookedTruck(truckNumber);
         } else if (agentType === 'prepaid') {
-          // Navigate to the payment interface for prepaid agent
           console.log('prepaid agent');
           navigate('/PaymentInterface');
         } else {
-          // Handle other agent types if needed
         }
       };
       const deleteBookedTruck = async (truckNumber) => {
         try {
-          // Send a DELETE request to the backend to delete the booked truck
           await axios.delete(`http://3.109.145.125:9001/deltruck/${truckNumber}`);
-          // Redirect to the AgentInterface page after successful deletion
           navigate('/AgentBooking',);
         } catch (error) {
           console.error('An error occurred while deleting the truck:', error);
         }
       };
       const sendDataToBackend = async () => {
-        // Create a data object to send to the server
         const bookingData = {
          truckNumber,
           truckWheels,
@@ -138,13 +127,12 @@ type:formData.type,
         };
     
         try {
-          // Send a POST request with the booking data to your backend server
           const response = await axios.post('http://3.109.145.125:9001/book', bookingData);
     
           if (response.status === 200) {
-            alert('Booking confirmed!'); // Show a success message to the user
+            alert('Booking confirmed!'); 
             navigate('/AgentBooking',{state :{crn:crn,phonenumber:phonenumber}}); 
-            console.log(crn,phonenumber)// Navigate to a success page or the homepage
+            console.log(crn,phonenumber)
           } else {
             console.error('Error confirming booking');
           }
@@ -165,18 +153,18 @@ const toSublocations = unloadingSublocations ? unloadingSublocations.split(', ')
 
     function formatTruckNumber(truckNumber) {
       if (truckNumber && truckNumber.length >= 6) {
-        const hiddenPart = '*'.repeat(6); // Create a string of 6 asterisks
-        const visiblePart = truckNumber.slice(6); // Get the remaining characters
-        return hiddenPart + visiblePart; // Combine the hidden and visible parts
+        const hiddenPart = '*'.repeat(6);
+        const visiblePart = truckNumber.slice(6); 
+        return hiddenPart + visiblePart; 
       }
-      return truckNumber; // Return the original truck number if it's shorter than 6 characters
+      return truckNumber; 
     }
     return (
         <div>
         <AgentNavbar/>
         <div className="container"style={{minHeight:'100vh'}}>
             <div className="row">
-                {/* Left Side (Form) */}
+              
                 <div className="col-lg-8">
                    <center> <h2 style={{fontFamily:'Segoe UI',textShadow:'1px 2px 2px gray',marginLeft:'120px',}}>Book Now</h2></center>
                     <form >
@@ -256,7 +244,7 @@ const toSublocations = unloadingSublocations ? unloadingSublocations.split(', ')
 </div>
                     </form>
 </div>
-                    {/* Right Side (Pricing) */}
+               
                     <div className="col-lg-4">
                         <h2>Pricing</h2>
                         <div className="pricing-details">

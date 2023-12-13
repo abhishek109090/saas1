@@ -11,12 +11,12 @@ function AgentInterface() {
   
   const navigate = useNavigate();
   useEffect(() => {
-    // Fetch truck data from your backend API
-    fetch(`http://3.109.145.125:9001/Trucks?crn=${crn}`) // Update with your backend API endpoint
+  
+    fetch(`http://3.109.145.125:9001/Trucks?crn=${crn}`)
       .then((response) => response.json())
       .then((data) => {
         console.log('Received truck data from backend:', data);
-        // Filter out trucks whose date and time have not exceeded
+      
         const currentDateTime = new Date();
         const filteredTrucks = data.filter((truck) => {
           const truckDateTime = new Date(truck.date + ' ' + truck.time);
@@ -27,9 +27,9 @@ function AgentInterface() {
       .catch((error) => console.error('Error fetching truck data:', error));
   }, []);
   const location = useLocation();
-  const { agentType, name,agentId, phonenumber, crn } = location.state || {}; // Retrieve agentType from state
+  const { agentType, name,agentId, phonenumber, crn } = location.state || {};
 
-  // Now you can use the agentType as needed in this component
+  
   console.log('Agent Type:', agentType);
   console.log('Agent name:', name);
   console.log('Agent name:', phonenumber);
@@ -37,11 +37,11 @@ function AgentInterface() {
   console.log('Agent name:', agentId);
 
   useEffect(() => {
-    // Check if agent credentials exist in session storage
+
     const agentName = sessionStorage.getItem("agentName");
 
     if (!name) {
-      // Redirect to the login page if credentials are missing
+      
       navigate('/Dashboard');
     }
   }, [navigate]);
@@ -64,36 +64,23 @@ function AgentInterface() {
       name: name,
       agentId:agentId,
       phonenumber: phonenumber,
-      crn: crn, // Add the agentType to the state
+      crn: crn,
     };
     console.log(stateToPass)
-    // Navigate to AgentBookNow and pass the truckData as state
+    
     navigate('/AgentBooknow', { state: stateToPass });
   };
   function formatTruckNumber(truckNumber) {
     if (truckNumber && truckNumber.length >= 6) {
-      const hiddenPart = '*'.repeat(6); // Create a string of 6 asterisks
+      const hiddenPart = '*'.repeat(6); 
       const visiblePart = truckNumber.slice(6); // Get the remaining characters
-      return hiddenPart + visiblePart; // Combine the hidden and visible parts
+      return hiddenPart + visiblePart; 
     }
-    return truckNumber; // Return the original truck number if it's shorter than 6 characters
+    return truckNumber;
   }
 
-  // const [fromLocation, setFromLocation] = useState('');
-  // const [toLocation, setToLocation] = useState('');
 
-  // const sendLocations = async () => {
-  //   try {
-  //     const response = await axios.post('', {
-  //       fromLocation,
-  //       toLocation,
-  //     });
-
-  //     console.log(response.data); 
-  //   } catch (error) {
-  //     console.error('Error sending locations to the server', error);
-  //   }
-  // };
+  
 
 
   return (

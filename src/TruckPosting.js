@@ -128,27 +128,7 @@ function TruckPosting() {
       alert('Invalid OTP! Please try again.');
     } 
   };
-  // useEffect(() => {
-  //   async function checkTruckPostStatus() {
-  //     try {
-  //       if (selectedRegistrationNumber) {
-  //         const response = await axios.get(`http://3.109.145.125/Posting/${selectedRegistrationNumber}`);
-  //         if (response.data.isPosted) {
-  //           // Truck has already been posted
-  //           setIsTruckAlreadyPosted(true);
-  //           alert('This truck has already been posted.');
-  //         } else {
-  //           setIsTruckAlreadyPosted(false);
-  //         }
-  //       }
-  //     } catch (error) {
-  //       console.error('Error checking truck post status:', error);
-  //     }
-  //   }
-
-  //   // Call the function to check truck post status when the selected truck number changes
-  //   checkTruckPostStatus();
-  // }, [selectedRegistrationNumber]);
+  
   const handlePost = () => {
     if (isOtpVerified) {
       const loadingSublocations = selectedSubLocations.map((loc) => loc.value).join(', ');
@@ -263,22 +243,7 @@ function TruckPosting() {
       </div>
 
       <div className="row mt-4">
-        {/* <div className="col-md-4">
-        <label> Loading Sublocation</label>
-          <Select
-              isMulti             disabled={dis}
-
-              value={selectedSubLocations}
-              onChange={(selectedOptions) => setSelectedSubLocations(selectedOptions)}
-              options={availableSubLocations.map((subLocation) => ({
-                value: subLocation,
-                label: subLocation,
-              }))}
-              placeholder="Select Loading Sub Locations"           
-
-            />
-        </div> */}
-
+      
 
 
         <div className="col-md-4">
@@ -328,33 +293,7 @@ function TruckPosting() {
       </div>
 
       <div className="row mt-4">
-        {/* <div className="col-md-6">
-        <label> Unloading Sublocation</label>
-          <Select
-            isMulti             disabled={dis}
-
-            value={selectedSubLocations1}
-            onChange={(selectedOptions) => setSelectedSubLocations1(selectedOptions)}
-            options={availableSubLocations1.map((subLocation) => ({
-              value: subLocation,
-              label: subLocation,
-            }))}
-            placeholder="Select Unloading Sub Locations" />
-        </div> */}
-
-        {/* <div className="col-md-6">
-        <label htmlFor="date">4. Date</label>
-          <input
-            type="date"
-            className="form-control"
-            id="date"
-            style={{ textTransform: 'uppercase' }}
-            value={date}
-            onChange={(e) => setDate(e.target.value)}            disabled={dis}
-
-            placeholder="Enter Name"
-          />
-        </div> */}
+       
       </div>
       <div className="row ">
       <div className="col-md-4">

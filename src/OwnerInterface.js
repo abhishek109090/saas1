@@ -101,13 +101,6 @@ const navigate = useNavigate('')
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
 
-// const [data,Setdata] = useState('')
-// useEffect(()=>
-// axios.get('')
-// .then(res=>Setdata(res.data))
-// )
-// .catch(err =>{console.log("err")})
-
 
   return (
     <div className='ownerbg' >
@@ -324,116 +317,7 @@ const navigate = useNavigate('')
 
 
 
-        {/* <div  className='' style={{marginBottom:'90px'}}>
-        <nav className="navbar navbar-expand-md" >
-        <ul className="navbar-nav me-auto" >
- <li className='nav-item'>
-          <div className="numbered-button">
-            <button className="navhome">
-            <a href="OwnerInterface" style={{textDecoration:'none',color:'black',}}>Home</a>
-            </button>
-          </div>
-          </li>
-          
-        </ul>
-        <button className="navbar-toggler text-white bg-info" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
-          <span className="navbar-toggler-icon"></span>
-        </button>
-        <div className="collapse navbar-collapse" id="mynavbar">
-          <ul className="navbar-nav me-auto ms-3 mt-2 me-3">
-          <li className="nav-item" style={{marginLeft:'240px'}}>
-          <div class="dropdown">
-  <button class=" dropdown-toggle centered-button1" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-    Agent
-  </button>
- 
-  <ul class="dropdown-menu" style={{backgroundColor:'transparent',border:'none'}}>
-    <li>
-      <button className="centered-button7" onClick={navigateToAgentRegistration}>
-                Agent Registration
-                <span className='childzoom'>Agent Registration</span> 
-                </button></li>
-    <li>
-      <button className="centered-button7" onClick={agent} >
-                 Agent Info
-              
-                </button>
-      </li>
-  </ul>
-</div>
- </li>
-            <li className="nav-item">
-            <div className="numbered-button">
-            <span className="number">2</span>
-            <button className="centered-button2" onClick={newTruck}>
-               Truck Registrations
-               <span className='zoom'>Truck Registrations</span> 
-            </button>
-          </div>
-            </li>
-            
-            <li className="nav-item">
-            <div className="numbered-button">
-            <span className="number">3</span>
-            <button className="centered-button3" onClick={truckPosting}>
-              Truck Posting
-              <span className='zoom'>Truck Posting </span> 
-            </button>
-          </div>
- 
-            </li>
-            <li className="nav-item">
-            <div className="numbered-button">
-            <span className="number">4</span>
-            <button className="centered-button4"onClick={Manage}>
-        Manage Bookings
-        <span className='zoom'>Manage Bookings</span> 
-            </button>
-          </div>
-            </li>
-            <li className="nav-item">         
-<div class="dropdown">
-  <button class=" dropdown-toggle centered-button1 ms-3" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-    Driver
-  </button>
-  <ul class="dropdown-menu" style={{backgroundColor:'transparent',border:'none'}}>
-    <li> 
-
-    <button className="centered-button7   " onClick={Driver}>
-                  Add New Driver
-                  <span className='zoom'>Add New Driver</span> 
-                </button>         
-      </li>
-    <li>
-    <button className="centered-button7 " onClick={Info} >
-                  Driver info
-                  <span className='zoom'>Driver info </span> 
-                </button>
-      </li>
-    
-  </ul>
-</div>
-            </li>
-
-            <li class="nav-item mb-1 ms-3">
-      <ul className="navbar-list" style={{fontWeight:'bold',color:'white'}}>
-          <li className="navbar-item dropdown">
-          <svg xmlns="http://www.w3.org/2000/svg" width="30" height="20" fill="currentColor" class="bi bi-person-circle text-dark" viewBox="0 0 16 16">
-  <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
-  <path fill-rule="evenodd"  d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
-</svg>  <span style={{color:'black'}} className='ms-auto'>My Profile</span>  
-            <div className="dropdown-content" style={{textDecoration:'none'}}>
-              <a href="#"style={{textDecoration:'none'}}>My Profile</a>
-              <a href="OwnerInterface" style={{textDecoration:'none'}}>Home</a>
-              <a href="Dashboard" onClick={handleLogout}style={{textDecoration:'none'}}>Logout</a>
-            </div>
-          </li>
-        </ul>
-      </li>
-          </ul>
-        </div>        
- </nav>
-          </div> */}
+        
 
 
  

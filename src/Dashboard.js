@@ -587,66 +587,7 @@ console.log(response ,'login')
 
  
 
-{/* <div id="carouselExampleControls" class="carousel slide" data-bs-ride="true">
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-    <div className='card-deck bg-light d-flex'>
-      <div class="card">
-            <img src={img1} class="card-img-top" alt="Image 1"/>
-        </div>
-        <div class="card">
-            <img src={img3} class="card-img-top" alt="Image 1"/>
-        </div>
-        <div class="card">
-            <img src={img4} class="card-img-top" alt="Image 1"/>
-        </div>
-        <div class="card">
-            <img src={img5} class="card-img-top" alt="Image 1"/>
-        </div>
-      </div>
-      
-    </div>
-    <div class="carousel-item">
-    <div className='card-deck bg-light d-flex'>
-      <div class="card">
-            <img src={img8} class="card-img-top" alt="Image 1"/>
-        </div>
-        <div class="card">
-            <img src={img9} class="card-img-top" alt="Image 1"/>
-        </div>
-        <div class="card">
-            <img src={img10} class="card-img-top" alt="Image 1"/>
-        </div><div class="card">
-            <img src={img2} class="card-img-top" alt="Image 1"/>
-        </div>
-      </div> 
-    </div>
-    <div class="carousel-item">
-    <div className='card-deck bg-light d-flex' >
-      <div class="card">
-            <img src={img3} class="card-img-top" alt="Image 1"/>
-        </div>
-        <div class="card">
-            <img src={img4} class="card-img-top" alt="Image 1"/>
-        </div>
-        <div class="card">
-            <img src={img5} class="card-img-top" alt="Image 1"/>
-        </div>
-        <div class="card">
-            <img src={img6} class="card-img-top" alt="Image 1"/>
-        </div>
-      </div>
-    </div>
-  </div>
-  <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon" aria-bs-hidden="true"></span>
-    <span class="sr-only">Previous</span>
-  </a>
-  <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-bs-slide="next">
-    <span class="carousel-control-next-icon" aria-bs-hidden="true"></span>
-    <span class="sr-only">Next</span>
-  </a>
-</div> */}
+
 
 <div className="chat-iconmain  fa-4x" id="chatIcon">
   {/* <!-- Add your trigger item and hidden icons here -->/ */}
