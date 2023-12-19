@@ -1,0 +1,36 @@
+/* Styles for mobile view (max-width: 767px) */
+@media (max-width: 767px) {
+  /* Hide the desktop view content */
+  .desktop-view {
+    display: none;
+  }
+
+  /* Show the mobile view content */
+  .mobile-view {
+    display: block;
+  }
+}
+
+/* Styles for desktop view (min-width: 768px) */
+@media (min-width: 900px) {
+  /* Show the desktop view content */
+  .desktop-view {
+    display: block;
+
+    flex-direction: row;
+  }
+
+  /* Hide the mobile view content */
+  .mobile-view {
+    display: none;
+  }
+}
+.desktop-view {
+    white-space: nowrap;
+  }
+/* Define the dimensions for the images within the fields */
+.image-in-field {
+    max-width: 80%;
+    max-height: 80%;
+  }
+  

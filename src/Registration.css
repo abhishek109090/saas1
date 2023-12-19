@@ -1,0 +1,112 @@
+.grid-container-1{
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 10px;
+  
+    padding: 10px;
+  }
+  .hello-1{
+      display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        background-color:white;
+  }
+  .hii-1{
+    background-color: #f9f7f7;
+        padding: 10px;
+        border-radius: 8px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+        width: 700px;
+       
+      }
+      
+      input {
+        width: 100%;
+        padding: 7px;
+        margin: 5px 0;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+      
+  }
+  select{
+    width: 100%;
+      padding: 7px;
+      margin: 5px 0;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+}
+.flex button{
+    background-color: rgb(49, 154, 121);
+    padding: 7px;
+    min-width: 200px;
+    font-size: 20px;
+    cursor: pointer;
+    
+}
+.flex{
+    display: flex;
+    justify-content: space-evenly;
+}
+/* In your CSS file or as inline styles */
+.modal-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Adds a semi-transparent black background for the blur effect */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999; /* Ensures the modal is on top of other content */
+}
+
+.modal-popup {
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  max-width: 300px;
+}
+
+.verify-button,
+.send-otp-button,
+.register-button {
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background-color 0.3s, color 0.3s; /* Add a smooth transition effect */
+
+  /* Define default styles for the buttons */
+  background-color: #007BFF;
+  color: #fff;
+}
+
+.verify-button:hover,
+.send-otp-button:hover,
+.register-button:hover {
+  background-color: #0056b3;
+}
+
+.register-button {
+  background-color: #28a745;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.register-button:hover {
+  background-color: #1e7e34;
+}
+
+/* Add more styles as needed for other elements */
+
+
