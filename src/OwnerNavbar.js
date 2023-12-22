@@ -1,28 +1,21 @@
 import React from 'react'
 import { useNavigate } from 'react-router-dom';
-import  { useState, useEffect } from 'react';
-import { useLocation } from 'react-router-dom';
+
+
 import MenuOutlinedIcon from '@mui/icons-material/MenuOutlined';
  
 
 export default function OwnerNavbar() {
     const navigate = useNavigate('')
-    const [showAdditionalButtons, setShowAdditionalButtons] = useState(false);
-    const [showAdditionalButtons1, setShowAdditionalButtons1] = useState(false);
-    const location = useLocation();
+  
+   
+    
     const crn = localStorage.getItem('userCRN')
     const name = sessionStorage.getItem('name')
   
     
-    const toggleAdditionalButtons = () => {
-        console.log('Button clicked'); 
-      setShowAdditionalButtons(!showAdditionalButtons);
-    };
-    const toggleAdditionalButtons1 = () => { 
-      console.log('Button clicked'); 
-    setShowAdditionalButtons1(!showAdditionalButtons1);
-  };
-     
+    
+    
     const navigateToAgentRegistration = () => {
         navigate('/AgentRegistration', { state: { crn } })
       };
@@ -44,7 +37,7 @@ export default function OwnerNavbar() {
       const Info= () => {
         navigate('/DriverInfo', { state: { crn ,name } })
       };
-      const navigates = useNavigate(); 
+     
       const handleLogout = () => {
         // Clear local storage and navigate to the login page
         localStorage.removeItem('userCRN');

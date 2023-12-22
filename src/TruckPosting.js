@@ -1,16 +1,15 @@
 import React, { useState, useEffect } from 'react';
 import './TruckPostiing.css'
-import { useLocation } from 'react-router-dom';
+
 
 import Select from 'react-select';
 import axios from 'axios';
 import OwnerNavbar from './OwnerNavbar';
 function TruckPosting() {
-  const location = useLocation();
+  
   const [showOtpField, setShowOtpField] = useState(false);
   const[dis, setDis] = useState(false);
-  const [ton, setTon] = useState('');
-  const [kilometer, setKilometer] = useState('');
+ 
   const [pricePerTonKm, setPricePerTonKm] = useState('');
   const [isFormDisabled, setIsFormDisabled] = useState(false);
   const [registrationNumbers, setRegistrationNumbers] = useState('');
@@ -61,27 +60,7 @@ function TruckPosting() {
   useEffect(() => {
     fetchRegistrationNumbersByCRN();
   }, []); 
-  
-  // useEffect(() => {
-  //   // Fetch truck post status based on the selected truck number
-  //   async function checkTruckPostStatus() {
-  //     try {
-  //       const truckNumber= selectedRegistrationNumber;
-  //       const response = await axios.get(`http://3.109.145.125/TruckPost/${truckNumber}`);
-  //       if (response.data.isAllowed) {
-  //         setIsTruckPostAllowed(true);
-  //       } else {
-  //         setIsTruckPostAllowed(false);
-  //       }
-  //     } catch (error) {
-  //       console.error('Error checking truck post status:', error);
-  //     }
-  //   }
-
-  //   if (selectedRegistrationNumber) {
-  //     checkTruckPostStatus();
-  //   }
-  // }, [selectedRegistrationNumber]);
+ 
   async function checkTruckPostStatus() {
     try {
       if (selectedRegistrationNumber && crn) {
@@ -355,7 +334,7 @@ function TruckPosting() {
       className="form-control"
       id="ton"
       value='1 Ton'
-      onChange={(e) => setTon(e.target.value)}
+     
       placeholder="Enter Ton"
       disabled
     />
@@ -369,7 +348,7 @@ function TruckPosting() {
       className="form-control"
       id="kilometer"
       value='1 KM'
-      onChange={(e) => setKilometer(e.target.value)}
+     
       disabled
     />
   </div>

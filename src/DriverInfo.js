@@ -1,11 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import './Driverinfo.css'
-import { useLocation } from 'react-router-dom';
 import OwnerNavbar from './OwnerNavbar';
 
 const DriverInfo = () => {
-  const location = useLocation();
+
   const [phoneNumbers, setPhoneNumbers] = useState([]);
   const [phoneNumber, setPhoneNumber] = useState('');
   // const [crn, setCRN] = useState('');
@@ -15,12 +14,7 @@ const DriverInfo = () => {
   const [filteredDriverDetails, setFilteredDriverDetails] = useState([]);
   const [status, setTbrStatus] = useState(''); // Track TBR status
   const [tbr, setTBR] = useState(''); // Track entered TBR
-  // useEffect(() => {
-  //   if (location.state && location.state.crn) {
-  //     setCRN(location.state.crn);
-  //     console.log('CRN:', location.state.crn);
-  //   }
-  // }, [location.state]);
+
   const crn = sessionStorage.getItem('userCRN');
   const phonenumber = sessionStorage.getItem('phoneNumber');
 

@@ -18,7 +18,6 @@ import AgentUpdate from "./AgentUpdate";
 import NewDriver from "./NewDriver";
 import DriverInfo from "./DriverInfo";
 import Footer from "./Footer";
-import NewPost from "./NewPost";
 import Calculator from "./Calculator";
 import AgentForm from "./AgentForm";
 
@@ -60,7 +59,6 @@ export default function App() {
           <Route path='AgentBooknow' element={<AgentBooknow />}></Route>
           
 
-          <Route path='newpost' element={<NewPost />}></Route>
           <Route path='cal' element={<Calculator />}></Route>
 
 

@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
-import { useLocation } from 'react-router-dom';
-import axios from 'axios';
+
+
 import './OwnerInterface.css'; // Import your CSS file
-import { useNavigate } from 'react-router-dom';
+
 import OwnerNavbar from './OwnerNavbar';
 import { styled } from '@mui/material/styles';
 import Grid from '@mui/material/Unstable_Grid2';
@@ -55,10 +55,8 @@ const style= {
 };
  
 function OwnerInterface() { 
-    const navigate = useNavigate('')
-    const [showAdditionalButtons, setShowAdditionalButtons] = useState(false);
-    const [showAdditionalButtons1, setShowAdditionalButtons1] = useState(false);
-    const location = useLocation();
+    
+  
  
     const [data, setData] = useState([]);
 const crn  = sessionStorage.getItem('userCRN')
@@ -81,70 +79,19 @@ useEffect(() => {
   fetchData(crn); // Pass the crn variable to the fetchData function
 }, [crn]);
 
-    // useEffect(() => {
-    //   if (location.state && location.state.crn && location.state.name ) {
-    //     setCRN(location.state.crn);
-    //     setName(location.state.name)
-    //     console.log('CRN:', location.state.crn);
-    //     console.log('name',location.state.name);
-    //   }
-    // }, [location.state]);  
+   
   
-    const toggleAdditionalButtons = () => {
-        console.log('Button clicked'); 
-      setShowAdditionalButtons(!showAdditionalButtons);
-    };
-    const toggleAdditionalButtons1 = () => { 
-      console.log('Button clicked'); 
-    setShowAdditionalButtons1(!showAdditionalButtons1);
-  };
-  const navigateToAgentRegistration = () => {
-    navigate('/AgentRegistration', { state: { crn } })
-  };
-  const agent = () => {
-    navigate('/AgentInfo', { state: { crn,name } })
-  };
-  const newTruck= () => {
-    navigate('/NewTruck', { state: { crn,name } })
-  };
-  const truckPosting= () => {
-    navigate('/TruckPosting', { state: { crn,name  } })
-  };
-  const Manage= () => {
-    navigate('/OwnerBooking', { state: { crn ,name } })
-  };
-  const Driver= () => {
-    navigate('/NewDriver', { state: { crn,name  } })
-  };
-  const Info= () => {
-    navigate('/DriverInfo', { state: { crn ,name } })
-  };
-  const navigates = useNavigate(); 
-  const handleLogout = () => {
-    // Clear local storage and navigate to the login page
-    localStorage.removeItem('userCRN');
-    sessionStorage.removeItem('phoneNumber');
-    sessionStorage.removeItem('password');
-    navigate('/login'); // Navigate to the login page
-  };
-
+   
+ 
+ 
   
-  const [expanded, setExpanded] = React.useState(false);
-  const handleChange = (panel) => (event, isExpanded) => {
-    setExpanded(isExpanded ? panel : false);
-  };
-
+  
   const [open, setOpen] = React.useState(false);
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
 
 
-// const [data,Setdata] = useState('')
-// useEffect(()=>
-// axios.get('')
-// .then(res=>Setdata(res.data))
-// )
-// .catch(err =>{console.log("err")})
+
 
 const [showSuccessMessage, setShowSuccessMessage] = useState(false);
 

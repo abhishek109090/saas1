@@ -53,28 +53,7 @@ export default function AgentUpdate() {
       [name]: value,
     });
   };
-  //   const fetchAgentData = (crn, phonenumber) => {
-  //     const fetchURL = `http://3.109.145.125/?${crn ? `crn=${crn}` : ''}${crn && phonenumber ? '&' : ''}${phonenumber ? `phonenumber=${phonenumber}` : ''}`;
-  //     console.log("Fetch URL: ", fetchURL);
-  //     if (fetchURL) {
-  //       axios
-  //         .get(fetchURL)
-  //         .then((response) => {
-  //           if (response.data) {
-  //             console.log('Before setting agentData:', agentData);
-  // setAgentData(response.data);
-  // console.log('After setting agentData:', response.data);
-  //            // Set the state with the fetched data
-  //             setIsLoading(false);
-  //           }
-  //         })
-  //         .catch((error) => {
-  //           console.error('Error fetching agent data:', error);
-  //           setIsLoading(false);
-  //         });
-  //     }
-  //   };
-
+ 
   const handleFileChange = (e) => {
     const { name, files } = e.target;
     setAgentData({

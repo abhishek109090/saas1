@@ -4,12 +4,12 @@ import AgentNavbar from './AgentNavbar';
 import jsPDF from 'jspdf';
 import 'jspdf-autotable';
 import axios from 'axios';
-import { Modal, Button, ListGroup } from 'react-bootstrap';
-import { useLocation } from 'react-router-dom';
+import { Modal,  ListGroup } from 'react-bootstrap';
+
 import MenuOutlinedIcon from '@mui/icons-material/MenuOutlined';
  
 function AgentBooking() {
-  const location = useLocation();
+
   const [selectedPayment, setSelectedPayment] = useState(null);
   const [showPaymentModal, setShowPaymentModal] = useState(false);
   
@@ -29,13 +29,7 @@ function AgentBooking() {
   const [printBookings, setPrintBookings] = useState([]);
   const [activeContent, setActiveContent] = useState('ShowMyBookings');
   const [bookings, setBookings]=useState([]);
-  // useEffect(() => {
-  //   if (location.state && location.state.crn && location.state.phonenumber) {
-  //     setCRN(location.state.crn);
-  //     setPhonenumber(location.state.phonenumber)
-  //     console.log(location.state.crn, location.state.phonenumber)
-  //   }
-  // }, [location.state]);
+  
   const agentType = sessionStorage.getItem('agentType')
   const name = sessionStorage.getItem('agentName')
   const agentId = sessionStorage.getItem('agentId')

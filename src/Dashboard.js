@@ -1,19 +1,9 @@
 import React, { useState,useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
-import img1 from './images/dbg.jpg'
-import img2 from './images/2.jpg'
-import img3 from './images/3.jpg'
-import img4 from './images/4.jpg'
-import img5 from './images/5.jpg'
-import img6 from './images/6.jpg'
-import img7 from './images/8.jpg'
-import img8 from './images/9.jpg'
-import img9 from './images/10.webp'
-import img10 from './images/11.jpg'
-import Paper from '@mui/material/Paper';
+
 import TextField from '@mui/material/TextField';
-import { styled } from '@mui/material/styles';
+
 import Grid from '@mui/material/Unstable_Grid2';
 import Alert from '@mui/material/Alert';
 import Divider from '@mui/material/Divider';
@@ -25,31 +15,14 @@ import './Dashboard.css';
 
  
 
-const style = {
-  position: 'absolute',
-  top: '50%',
-  left: '50%',
-  transform: 'translate(-50%, -50%)',
-  width: 600,
-  bgcolor: 'background.paper',
-  border: '2px solid #000',
-  boxShadow: 24,
-  p: 4,
-};
-const Item = styled(Paper)(({ theme }) => ({
-  backgroundColor: theme.palette.mode === 'dark' ? '#1A2027' : 'white',
-  ...theme.typography.body2,
-  padding: theme.spacing(1),
-  textAlign: 'center',
-  color: theme.palette.text.secondary,
-}));
+
 
 
 
 function Dashboard() {
   const navigate=useNavigate();
   const [popupVisible1, setPopupVisible1] = useState(false);
-  const [chatPopupVisible, setChatPopupVisible] = useState(false);
+  
   const [popupVisible2, setPopupVisible2] = useState(false);
   const [popupVisible3, setPopupVisible3] = useState(false);
   const [phonenumber, setPhoneNumber] = useState('');
@@ -144,7 +117,6 @@ function Dashboard() {
           const loginTimestamp = new Date().getTime();
           localStorage.setItem('loginTimestamp', loginTimestamp);
 
-                // Set the flag in sessionStorage_____________________
           sessionStorage.setItem('displaySuccessMessage', 'true');
           sessionStorage.setItem('removesuccessmsg','true')
 
@@ -153,7 +125,7 @@ function Dashboard() {
           // _______________________________________
           console.log('Login successful');
           setMessage('Successful Login!');
-          // navigate('/OwnerInterface', { state: { crn: userCRN,name:name } });
+         
         } else {
           // Handle missing CRN in the response
           setError('CRN not found in user data');
@@ -232,54 +204,14 @@ console.log(response ,'login')
 
   };
 
-  const handleTruckOwnerLogin = () => {
-    // Check if the login timestamp exists in local storage
-    const loginTimestamp = localStorage.getItem('loginTimestamp');
-    if (loginTimestamp) {
-      // Calculate the time difference in milliseconds
-      const currentTime = new Date().getTime();
-      const timeDifference = currentTime - parseInt(loginTimestamp);
-  
-      // Define the time limit (24 hours in milliseconds)
-      const timeLimit = 24 * 60 * 60 * 1000;
-  
-      // If the time difference is within the time limit, navigate to the owner interface
-      if (timeDifference <= timeLimit) {
-        const userCRN = sessionStorage.getItem('userCRN');
-        const name = sessionStorage.getItem('name');
-  
-        navigate('/OwnerInterface', { state: { crn: userCRN, name } });
-      } else {
-        // The user needs to log in again since the time limit has passed
-        togglePopup1();
-      }
-    } else {
-      // The user has never logged in before, so they need to log in
-      togglePopup1();
-    }
-  };
-  const [inputValue, setInputValue] = useState('');
+
   const [msg, setMsg] = useState('');
   const [msgerror, setMsgerror] = useState('');
 
 
-  const handleInputChange = (e) => {
-    setInputValue(e.target.value);
-  };
+ 
 
-  const handleSubmit = () => {
-    if (inputValue === '1') {
-      setMsg('Success!');
-      setTimeout(() => {
-        setMsg('');
-      }, 3000);
-    } else  {
-      setMsgerror('Error!');
-      setTimeout(() => {
-        setMsgerror('');
-      }, 3000);
-    }
-  };
+ 
   const togglePopup1 = () => {
     setPopupVisible1(!popupVisible1);
   };
@@ -291,16 +223,8 @@ console.log(response ,'login')
     setPopupVisible3(!popupVisible3);
   };
 
-  const handleLogout = () => {
-    // Clear local storage and navigate to the login page
-    localStorage.removeItem('userCRN');
-    sessionStorage.removeItem('phoneNumber');
-    sessionStorage.removeItem('password');
-    navigate('/login'); // Navigate to the login page
-  };
-  const [open, setOpen] = React.useState(false);
-  const handleOpen = () => setOpen(true);
-  const handleClose = () => setOpen(false);
+ 
+
   
 const [showlogoutMessage, setShowlogoutMessage] = useState(false);
 useEffect(() => {
@@ -544,13 +468,7 @@ Your journey, our commitment <span className='text-light'>-</span> <span classNa
     )}
   </Typography>
 </center>
- {/* <div >
-  <label>
-    Enter value:
-    <input type="text" value={inputValue} onChange={handleInputChange} />
-  </label>
-  <button onClick={handleSubmit}>Submit</button>
-</div>   */}
+
 
 
       <div className="buttons-container1">
